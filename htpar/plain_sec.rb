@@ -1,13 +1,14 @@
 require 'httparty'
 require 'json'
 
-response = HTTParty.get('http://api.stackexchange.com/2.2/questions?site=askubuntu')
-body = JSON.parse(response.body)["items"]
+response = HTTParty.get('https://golang.org/doc/install.json')
+body = response.body
 outp 'code', response.code
 outp 'msg', response.message
 outp 'headers', response.headers.inspect
-waller = Walker.new(body[0])
-puts waller&.kl&.instance_methods&.join(',')
+outp 'body', body[0..89]
+# waller = Walker.new(body[0])
+# puts waller&.kl&.instance_methods&.join(',')
 # walk_by_reps(body).each(&:join)
 
 BEGIN {
