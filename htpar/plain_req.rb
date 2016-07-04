@@ -9,7 +9,11 @@ BEGIN {
 	def will_deleted?
 		false
 	end
-	
+
+	def sec_will_deleted?
+		false
+	end
+
 	def outp(title, body)
 		puts "-" * 30
 		puts "---#{title}---"
