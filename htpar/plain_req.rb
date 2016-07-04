@@ -53,5 +53,9 @@ BEGIN {
 		def insp
 			puts item.class
 		end
+
+		def stashed
+			puts "Git strash"
+		end
 	end
 }
