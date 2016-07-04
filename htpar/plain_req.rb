@@ -49,5 +49,9 @@ BEGIN {
 		def firs
 			puts "firs"
 		end
+
+		def insp
+			puts item.class
+		end
 	end
 }
