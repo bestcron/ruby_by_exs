@@ -45,5 +45,9 @@ BEGIN {
 			do_desc 'reput', item["owner"]["reputation"]
 			do_desc 'd_name', item["owner"]["display_name"]
 		end
+
+		def firs
+			puts "firs"
+		end
 	end
 }
